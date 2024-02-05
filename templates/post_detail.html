@@ -13,7 +13,7 @@
         <!-- The featured image URL goes in the src attribute -->
         {% if "placeholder" in post.featured_image.url %}
         <img
-          src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
+          src="{% static 'images.LVL27_white_text.png' %}"
           width="100%"
         />
         {% else %}

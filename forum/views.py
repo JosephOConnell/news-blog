@@ -9,6 +9,7 @@ class PostList(generic.ListView):
     template_name = "index.html"
     paginate_by = 6
 
+
 class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -28,4 +29,3 @@ class PostDetail(View):
                 "liked": liked,
             }
         )
-    
