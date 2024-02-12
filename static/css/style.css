@@ -46,6 +46,11 @@ body {
     background-color: #E84610;
 }
 
+.scale {
+    width: 100%;
+    height: auto;
+}
+
 .author {
     color: white;
     margin: 4px;
@@ -97,7 +102,7 @@ body {
 }
 
 .post-title {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 5%;
 }
 
@@ -106,7 +111,8 @@ body {
     color: lightgray;
 }
 
-.btn-signup {
+.btn-signup,
+.btn-edit {
     background-color: #E84610;
     color: #fff;
 }
@@ -134,9 +140,22 @@ body {
     background: transparent;
 }
 
+.btn-delete {
+    color: #fff;
+    background: #E84610;
+}
+
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+.faded {
+    color: rgb(172, 175, 175);
+}
+
+.approval {
+    color: rgb(222, 146, 168);
 }
