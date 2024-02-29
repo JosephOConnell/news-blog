@@ -29,10 +29,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-josephoconnell-news-blog-eixwpi7qss.us2.codeanyapp.com',
+    '8000-josephoconnell-news-blog-astiwwi5dd.us1.codeanyapp.com',
     '.herokuapp.com',
     'www.lvl27.ie',
     'lvl27.ie',]
