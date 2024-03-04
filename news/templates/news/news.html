@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 text-center">
+            <img src="{% static 'images/LVL27-white.png' %}" width="75%">
+        </div>
+        <div class="col-8">
+            <h2>{{ news.title }}</h2>
+            {{ news.content | safe }}
+            <div class="col text-right">          
+                <p class="text-end"><em>Updated on: {{ news.updated_on }}</em></p>
+              </div>
+        </div>
+    </div>  
+</div>
+{% endblock content %}

@@ -1,5 +1,7 @@
 <!-- prettier-ignore -->
-{% load static %} {% url 'home' as home_url %}
+{% load static %} 
+{% url 'news' as news_url %}
+{% url 'forum' as forum_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -9,24 +11,24 @@
 <html class="h-100" lang="en">
   <head>
     <title>LVL27 GAMING NEWS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts CSS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
       rel="stylesheet"
-    />
+    >
 
     <!-- Font Awesome CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    >
 
     <!-- Bootstrap CSS -->
     <link
@@ -34,17 +36,17 @@
       rel="stylesheet"
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
-    />
+    >
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
 
   <body class="d-flex flex-column h-100 main-bg">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home' %}"
+        <a class="navbar-brand" href="{% url 'news' %}"
           ><span class="brand"
             >LVL<span class="red-o">27</span>GAMING<span class="thin"
               >|NEWS</span
@@ -66,43 +68,51 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link {% if request.path == home_url %}active{% endif %}"
+                class="nav-link {% if request.path == news_url %}active{% endif %}"
                 aria-current="page"
-                href="#"
+                href="{% url 'news' %}"
+                >NEWS</a
+              >
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == forum_url %}active{% endif %}"
+                aria-current="page"
+                href="{% url 'forum' %}"
                 >FORUM</a
               >
             </li>
-            {% if user.is_authenticated %}
-            <li class="nav-item">
-              <a
-                class="nav-link {% if request.path == logout_url %}active{% endif %}"
-                aria-current="page"
-                href="{% url 'account_logout' %}"
-                >LOGOUT</a
-              >
-            </li>
-            {% else %}
-            <li class="nav-item">
-              <a
-                class="nav-link {% if request.path == signup_url %}active{% endif %}"
-                aria-current="page"
-                href="{% url 'account_signup' %}"
-                >REGISTER</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link {% if request.path == login_url %}active{% endif %}"
-                aria-current="page"
-                href="{% url 'account_login' %}"
-                >LOGIN</a
-              >
-            </li>
-            {% endif %}
           </ul>
-          <span class="navbar-text text-muted">
-            adventures of a software developer
-          </span>
+            <span>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <a
+                    class="nav-link {% if request.path == logout_url %}active{% endif %}"
+                    aria-current="page"
+                    href="{% url 'account_logout' %}"
+                    >LOGOUT</a
+                  >
+                </li>
+                {% else %}
+                <li class="nav-item">
+                  <a
+                    class="nav-link {% if request.path == signup_url %}active{% endif %}"
+                    aria-current="page"
+                    href="{% url 'account_signup' %}"
+                    >REGISTER</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link {% if request.path == login_url %}active{% endif %}"
+                    aria-current="page"
+                    href="{% url 'account_login' %}"
+                    >LOGIN</a
+                  >
+                </li>
+                {% endif %}
+              </ul>
+            </span>
         </div>
       </div>
     </nav>
@@ -130,10 +140,11 @@
     <footer class="footer mt-auto py-3 dark-bg">
       <p class="m-0 text-center text-white">Made by Joseph O'Connell</p>
       <p class="m-0 text-center text-white">
-        Follow us: <i class="fab fa-facebook-square ms-3"></i>
-        <i class="fab fa-twitter-square ms-3"></i>
-        <i class="fab fa-instagram-square ms-3"></i>
-        <i class="fab fa-youtube-square ms-3"></i>
+        Follow us: 
+        <a href='https://twitter.com/_LVL27_'><i class="fab fa-twitter-square ms-3 text-white" ></i></a>
+        <a href='https://www.linkedin.com/in/joseph-o-connell-289161230/'><i class="fab fa-linkedin-in ms-3 text-white"></i></a>
+        <a href='https://www.instagram.com/josephoconnell1989/'><i class="fab fa-instagram-square ms-3 text-white"></i></a>
+        <a href='https://www.youtube.com/'><i class="fab fa-youtube-square ms-3 text-white"></i></a>
       </p>
     </footer>
 
@@ -144,7 +155,7 @@
           alert.close();
       }, 2500);
   </script>
-  
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
