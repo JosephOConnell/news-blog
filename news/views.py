@@ -1,15 +1,32 @@
 from django.shortcuts import render
-from .models import News
+import requests
+import os
+from dotenv import load_dotenv, dotenv_values
+from newsapi import NewsApiClient
 
+load_dotenv()
+API = os.getenv('NEWS_API')
 
-def news(request):
-    """
-    Renders the NEWS page
-    """
-    news = News.objects.all().order_by('-updated_on').first()
+def index(request):
+    url = (f"https://newsapi.org/v2/everything?q=gaming&apiKey={API}")
+    gaming_news = requests.get(url).json()
+    a = gaming_news['articles']
 
-    return render(
-        request,
-        "news/news.html",
-        {"news": news},
-    )
+    urlToImage = []
+    author = []
+    title = []
+    description = []
+    url = []
+
+    for i in range(len(a)):
+        f = a[i]
+        urlToImage.append(f['urlToImage'])
+        author.append(f['author'])
+        title.append(f['title'])
+        description.append(f['description'])
+        url.append(f['url'])
+    news_list = zip(urlToImage, author, title, description, url)
+    
+    context = {'news_list': news_list}
+
+    return render(request, 'news/news.html', context)

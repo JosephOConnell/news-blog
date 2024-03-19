@@ -1,18 +1,36 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-<div class="container mt-5">
+
+<!-- index.html content starts here -->
+<div class="container-fluid">
     <div class="row">
-        <div class="col-4 text-center">
-            <img src="{% static 'images/LVL27-white.png' %}" width="75%">
+      <!-- Blog Entries Column -->
+        <div class="col-12">
+            <div class="row">
+                {% for urlToImage, author, title, description, url in news_list %}
+                <div class="col-md-12 container center">
+                    <div class="card mb-12">
+                        <div class="card-body">
+                            <hr>
+                            <div class="row g-0">
+                                <div class="col-md-6 masthead-text">
+                                    <h6 class="post-title"> Author: {{ author }} </h6>
+                                    <h1 class="post-subtitle">{{ title }}</h1>
+                                    <p class="post-subtitle">{{ description }} </p>
+                                    <a href=" {{ url }} " class="post-subtitle"> Continue Reading Here</a>
+                                </div>
+                                <div class="d-none d-md-block col-md-6 masthead-image">
+                                    <img src= "{{ urlToImage }}" width="100%">
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %} 
+            </div>
         </div>
-        <div class="col-8">
-            <h2>{{ news.title }}</h2>
-            {{ news.content | safe }}
-            <div class="col text-right">          
-                <p class="text-end"><em>Updated on: {{ news.updated_on }}</em></p>
-              </div>
-        </div>
-    </div>  
+    </div>
 </div>
-{% endblock content %}
+{%endblock%}
