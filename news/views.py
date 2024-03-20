@@ -8,7 +8,7 @@ load_dotenv()
 API = os.getenv('NEWS_API')
 
 def index(request):
-    url = (f"https://newsapi.org/v2/everything?q=gaming&apiKey={API}")
+    url = (f"https://newsapi.org/v2/everything?q=gaming, gaming-news, video-games&apiKey={API}")
     gaming_news = requests.get(url).json()
     a = gaming_news['articles']
 
