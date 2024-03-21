@@ -63,19 +63,25 @@ My user stories can be seen here on [GitHub](https://github.com/users/JosephOCon
 
 - News HTML
   0 errors returned when passing through the official [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.lvl27.ie%2F)
-  ![HTML Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_html_validator.w3.jpeg?raw=true)
+  ![HTML Validator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_html_validator.w3.jpeg?raw=true)
 
 - Forums HTML
   0 errors returned when passing through the official [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.lvl27.ie%2Fforum%2F)
-  ![HTML Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/forum_html_validator.w3.jpeg?raw=true)
+  ![HTML Validator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/forum_html_validator.w3.jpeg?raw=true)
 
 - News CSS
-  0 errors returned when passing through the official [W3C CSS]()
-  ![CSS Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_css_jigsaw.jpeg?raw=true)
+  0 errors returned when passing through the official [W3C CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwww.lvl27.ie%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  ![CSS Validator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_css_jigsaw.jpeg?raw=true)
 
 - Forums CSS
-  I checked all the fourum post and got 0 errors returned when passing through the official [W3C CSS]()
-  ![CSS Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/lets_talk_ps_css_jigsaw.jpeg?raw=true)
+  I checked all the fourum post and got 0 errors returned when passing through the official [W3C CSS](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.lvl27.ie%2Fforum%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  ![CSS Validator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/lets_talk_ps_css_jigsaw.jpeg?raw=true)
+
+- News Lighthouse HTML
+  ![News lighthouse](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_lighthouse.jpeg?raw=true)
+
+- Forum Lighthouse HTML
+  ![Forum lighthouse](https://github.com/JosephOConnell/news-blog/blob/main/static/images/forum_lighthouse.jpeg?raw=true)
 
 
 ### Deployment
@@ -130,4 +136,3 @@ The live link through the domain name can be found here - [LVL27 News & Forum](h
     - [Code Institute](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm)
     - [Stack Overflow](https://stackoverflow.com/)
     - [Django Project](https://forum.djangoproject.com/)
-
