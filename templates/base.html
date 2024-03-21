@@ -49,13 +49,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'news' %}"
-          ><span class="brand"
-            >LVL<span class="red-o">27</span>GAMING<span class="thin"
-              >|NEWS</span
-            ></span
-          ></a
-        >
+        <a class="navbar-brand" href="{% url 'news' %}">
+          <span class="brand">LVL<span class="red-o">27</span>GAMING<span class="thin">|NEWS</span></span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -74,11 +70,11 @@
                 aria-current="page" href="{% url 'news' %}"> NEWS </a>
             </li>
             <li class="nav-item">
-              <aclass="nav-link {% if request.path == forum_url %}active{% endif %}"
+              <a class="nav-link {% if request.path == forum_url %}active{% endif %}"
                 aria-current="page" href="{% url 'forum' %}"> FORUM </a>
             </li>
           </ul>
-            <span>
+            <div>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {% if user.is_authenticated %}
                 <li class= "nav-item"><a class="nav-link {% if request.path == logout_url %}active{% endif %}"
@@ -90,13 +86,12 @@
                     aria-current="page" href="{% url 'account_signup' %}">REGISTER</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link {% if request.path == login_url %}active{% endif %}"
+                  <a class="nav-link {% if request.path == login_url %}active{% endif %}"
                     aria-current="page" href="{% url 'account_login' %}">LOGIN</a>
                 </li>
                 {% endif %}
               </ul>
-            </span>
+            </div>
         </div>
       </div>
     </nav>

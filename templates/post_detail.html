@@ -14,9 +14,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://github.com/JosephOConnell/news-blog/blob/main/static/images/LVL27_white_text.png?raw=true" width="100%" alt="Gaming Image">
+                <img src="https://github.com/JosephOConnell/news-blog/blob/main/static/images/LVL27_white_text.png?raw=true" style="width:100%" alt="Gaming Image">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%" alt="Gaming Image">
+                <img src=" {{ post.featured_image.url }}" style="width:100%" alt="Gaming Image">
                 {% endif %}
             </div>
         </div>
