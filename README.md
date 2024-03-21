@@ -5,21 +5,18 @@ I would like to start off by saying this was a rocky build from the very start, 
 I had a few weeks where I was very sick and unable to put much time into my project and I felt like I was constatly having connection issiues with the CodeAnywhere IDE. Over the last month sometimes it was out for a full Saturdays Which would have been my main day for studying. For a while the IDE was taking up to 30 minutes to log in, And now I am constatntly losing connection.
 I then spent too much time focusing on the API when I should have been building out the forum idea. WIth the due date coming quick and the pressure adding up I wasn't able to build and deploy a website up to my own standards. I really wanted this page to be the best it could but I over shot. Overall I am disapoited with what I am handing in for my 4th Project.
 
-![Am I Responsive]()
-![Am I Responsive]()
 
 ### LVL27 NEWS & FORUM
 
-LVL27 is first and foremost a gaming news website I build for everyday gamers. With the News-API pulling gaming news articles from the web using these queries: gaming, gaming-news, video-games. The API pulls these and posts them to the HTMI page in a easy to read format. It is simple design that is great to look at and provides up to date news from reliable sources while having no adds or pop ups to distract the user. The NEWS API is where I spent most of my time. The documentaion was not great on the website and I had to visit places like youtube and Stack Overflow for any of the many errors I ran into.
+LVL27 is first and foremost a gaming news website I build for everyday gamers. With the News-API pulling gaming news articles from the web using these queries: gaming, gaming-news, video-games, xbox, nintendo, playstation, video-game-news. The API pulls these and posts them to the HTMI page in a easy to read format. It is simple design that is great to look at and provides up to date news from reliable sources while having no adds or pop ups to distract the user. The NEWS API is where I spent most of my time. The documentaion was not great on the website and I had to visit places like youtube and Stack Overflow for any of the many errors I ran into.
+I would have liked to implement models to comment, like and share articles to social media websites.
 
 The Forum part of this website is a place where people can talk about gaming news, platforms or general gaming. The user has to make an account to like and comment. The admin has to approve comment to make sure community guidlines are met. With this I aim to generate a none toxic place for gamers to meet and talk about how much the love gaming.
+In future updates I would like to implement an auto comment approval system that blocks comments with certain words that would go against the community guidelines.
 
 
 ![PageSpeed Insights Lighthouse Results]()
 ![PageSpeed Insights Lighthouse Results]()
-
-![Lighthouse Results]()
-![Lighthouse Results]()
 
 
 ### Testing
@@ -42,22 +39,27 @@ The Forum part of this website is a place where people can talk about gaming new
 
 ### Validator Testing
 
-- news HTML
+- News HTML
   0 errors returned when passing through the official [W3C]()
   ![HTML Vidator]()
 
-- index HTML
+- Forums HTML
   0 errors returned when passing through the official [W3C]()
   ![HTML Vidator]()
 
-- post_detail HTML
-  0 errors returned when passing through the official [W3C]()
-  ![HTML Vidator]()
+- News CSS
+  0 errors returned when passing through the official [W3C CSS]()
+  ![CSS Vidator]()
 
-- base HTML
-  0 errors returned when passing through the official [W3C]()
-  ![HTML Vidator]()
+- Forums CSS
+  0 errors returned when passing through the official [W3C CSS]()
+  ![CSS Vidator]()
 
+- **ERRORS**
+    I got one error when checking the pages on the HTML Validator:
+      Error: A charset attribute on a meta element found after the first 1024 bytes.
+        At line 647, column 21
+        charset="utf-8"><link rel="ic
 
 ### Deployment
 
@@ -101,7 +103,7 @@ The live link through the heroku link can be found here - [LVL27 News & Forum](h
 
 The live link through the domain name can be found here - [LVL27 News & Forum](https://www.lvl27.ie/)
 
-### Content and Media Credits
+### Content Credits
   -**NEWS-API**
     - [Pythonology](https://www.youtube.com/watch?v=gO9AtWBpslc)
     - [Bug Ninza](https://www.youtube.com/watch?v=kqDeb3fGNlw)
