@@ -62,12 +62,12 @@ My user stories can be seen here on [GitHub](https://github.com/users/JosephOCon
 ### Validator Testing
 
 - News HTML
-  0 errors returned when passing through the official [W3C]()
-  ![HTML Vidator]()
+  0 errors returned when passing through the official [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.lvl27.ie%2F)
+  ![HTML Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_html_validator.w3.jpeg?raw=true)
 
 - Forums HTML
-  0 errors returned when passing through the official [W3C]()
-  ![HTML Vidator]()
+  0 errors returned when passing through the official [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.lvl27.ie%2Fforum%2F)
+  ![HTML Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/forum_html_validator.w3.jpeg?raw=true)
 
 - News CSS
   0 errors returned when passing through the official [W3C CSS]()
