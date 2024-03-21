@@ -5,18 +5,20 @@ I would like to start off by saying this was a rocky build from the very start, 
 I had a few weeks where I was very sick and unable to put much time into my project and I felt like I was constatly having connection issiues with the CodeAnywhere IDE. Over the last month sometimes it was out for a full Saturdays Which would have been my main day for studying. For a while the IDE was taking up to 30 minutes to log in, And now I am constatntly losing connection.
 I then spent too much time focusing on the API when I should have been building out the forum idea. WIth the due date coming quick and the pressure adding up I wasn't able to build and deploy a website up to my own standards. I really wanted this page to be the best it could but I over shot. Overall I am disapoited with what I am handing in for my 4th Project.
 
+![News Homepage](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_homepage.jpeg?raw=true)
 
 ### LVL27 NEWS & FORUM
 
 LVL27 is first and foremost a gaming news website I build for everyday gamers. With the News-API pulling gaming news articles from the web using these queries: gaming, gaming-news, video-games, xbox, nintendo, playstation, video-game-news. The API pulls these and posts them to the HTMI page in a easy to read format. It is simple design that is great to look at and provides up to date news from reliable sources while having no adds or pop ups to distract the user. The NEWS API is where I spent most of my time. The documentaion was not great on the website and I had to visit places like youtube and Stack Overflow for any of the many errors I ran into.
 I would have liked to implement models to comment, like and share articles to social media websites.
 
+![Forum Homepage](https://github.com/JosephOConnell/news-blog/blob/main/static/images/forum_homepage.jpeg?raw=true)
+
 The Forum part of this website is a place where people can talk about gaming news, platforms or general gaming. The user has to make an account to like and comment. The admin has to approve comment to make sure community guidlines are met. With this I aim to generate a none toxic place for gamers to meet and talk about how much the love gaming.
 In future updates I would like to implement an auto comment approval system that blocks comments with certain words that would go against the community guidelines.
 
-
-![PageSpeed Insights Lighthouse Results]()
-![PageSpeed Insights Lighthouse Results]()
+![Forum Post](https://github.com/JosephOConnell/news-blog/blob/main/static/images/forum_post.jpeg?raw=true)
+![Models](https://github.com/JosephOConnell/news-blog/blob/main/static/images/models.jpeg?raw=true)
 
 
 ### USER STORIES
@@ -36,6 +38,8 @@ In future updates I would like to implement an auto comment approval system that
 | As a Site User I can view a list of posts so that I can select one to read | Complete |
 | As a Site User under the age of 18 I can 't sign up for an account | Not Complete |
 
+My user stories can be seen here on [GitHub](https://github.com/users/JosephOConnell/projects/3)
+
 
 ### Testing
 
@@ -54,8 +58,6 @@ In future updates I would like to implement an auto comment approval system that
 | If Signed Out: Comment | Click into the comment form | No comment form available | Pass |
 | Social Links | Click the links | Brings you to the relenvent social media site | Pass |
 
-My user stories can be seen here on [GitHub](https://github.com/users/JosephOConnell/projects/3)
-
 
 ### Validator Testing
 
@@ -69,17 +71,12 @@ My user stories can be seen here on [GitHub](https://github.com/users/JosephOCon
 
 - News CSS
   0 errors returned when passing through the official [W3C CSS]()
-  ![CSS Vidator]()
+  ![CSS Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/news_css_jigsaw.jpeg?raw=true)
 
 - Forums CSS
-  0 errors returned when passing through the official [W3C CSS]()
-  ![CSS Vidator]()
+  I checked all the fourum post and got 0 errors returned when passing through the official [W3C CSS]()
+  ![CSS Vidator](https://github.com/JosephOConnell/news-blog/blob/main/static/images/lets_talk_ps_css_jigsaw.jpeg?raw=true)
 
-- **ERRORS**
-    I got one error when checking the pages on the HTML Validator:
-      Error: A charset attribute on a meta element found after the first 1024 bytes.
-        At line 647, column 21
-        charset="utf-8"><link rel="ic
 
 ### Deployment
 
