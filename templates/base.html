@@ -70,20 +70,12 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link {% if request.path == news_url %}active{% endif %}"
-                aria-current="page"
-                href="{% url 'news' %}"
-                >NEWS</a
-              >
+              <a class="nav-link {% if request.path == news_url %}active{% endif %}"
+                aria-current="page" href="{% url 'news' %}"> NEWS </a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link {% if request.path == forum_url %}active{% endif %}"
-                aria-current="page"
-                href="{% url 'forum' %}""
-                >FORUM</a
-              >
+              <aclass="nav-link {% if request.path == forum_url %}active{% endif %}"
+                aria-current="page" href="{% url 'forum' %}"> FORUM </a>
             </li>
           </ul>
             <span>

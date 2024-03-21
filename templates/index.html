@@ -22,7 +22,7 @@
                 <h2 class="card-title">{{ post.title }}</h2>
                 <p class="card-text">{{ post.excerpt }}</p>
               </a>
-              <hr />
+              <hr>
               <p class="card-text h6">{{ post.created_on}}</p>
               <span <i class="far fa-heart"> {{ post.number_of_likes }}</span>
             </div>
@@ -38,9 +38,7 @@
     <ul class="pagination justify-content-center">
       {% if page_obj.has_next %}
       <li>
-        <a href="?page={{ page_obj.next_page_number }}" class="page-link">
-          NEXT &raquo;</a
-        >
+        <a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a>
       </li>
       {% endif %}
     </ul>

@@ -19,6 +19,24 @@ In future updates I would like to implement an auto comment approval system that
 ![PageSpeed Insights Lighthouse Results]()
 
 
+### USER STORIES
+
+| **USER STORIES**                    | **RESULT**           |
+| ----------------------------------- | -------------------- |
+| As a Site User I can register an account. | User can register on the website | Complete |
+| As a Site Admin I can create, read, update and delete posts so that I can manage my blog content | Complete |
+| As a Site Admin I can create draft posts so that I can finish writing the content later | Complete |
+| As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments | Complete |
+| As a Site Users I can see video game news on the news feed | Complete |
+| As a Site User I can like or unlike a post so that I can interact with the content | Complete |
+| As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular | Complete |
+| As a Site User I can leave comments on a post so that I can be involved in the conversation | Complete |
+| As a Site User / Admin I can view comments on an individual post so that I can read the conversation | Complete |
+| As a Site User I can click on a post so that I can read the full text | Complete |
+| As a Site User I can view a list of posts so that I can select one to read | Complete |
+| As a Site User under the age of 18 I can 't sign up for an account | Not Complete |
+
+
 ### Testing
 
 | **TEST**                            | **ACTION**                                       | **EXPECTATION**                                              | **RESULT**        |
@@ -35,6 +53,8 @@ In future updates I would like to implement an auto comment approval system that
 | If Signed Out: Like | Press the like button | Like button pressed. Nothing will happen | Pass |
 | If Signed Out: Comment | Click into the comment form | No comment form available | Pass |
 | Social Links | Click the links | Brings you to the relenvent social media site | Pass |
+
+My user stories can be seen here on [GitHub](https://github.com/users/JosephOConnell/projects/3)
 
 
 ### Validator Testing
